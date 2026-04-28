@@ -13,8 +13,8 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class Task {
-
+public class Task 
+{
     private String id;
     private String tittle;
     private String description;
@@ -22,5 +22,4 @@ public class Task {
     private TaskStatus status;
     private Project project;
     private Member assignMember;
-
 }

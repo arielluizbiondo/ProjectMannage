@@ -14,13 +14,12 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class Member {
-
+public class Member 
+{
     private String id;
     private String secret;
     private String name;
     private String email;
     private Boolean deleted;
     private List<Project> project;
-
 }
