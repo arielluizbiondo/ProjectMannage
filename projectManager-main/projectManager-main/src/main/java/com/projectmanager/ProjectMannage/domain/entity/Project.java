@@ -1,9 +1,13 @@
 package com.projectmanager.ProjectMannage.domain.entity;
+
 import com.projectmanager.ProjectMannage.model.ProjectStatus;
-import lombok.*;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
-import java.util.Objects;
 
 @Builder
 /*
@@ -13,10 +17,10 @@ import java.util.Objects;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
 @Table
+public class Project {
 
-public class Project 
-{
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     @Column(name = "id", nullable = false, length = 36)
@@ -37,4 +41,5 @@ public class Project
     @Column(name = "status", nullable = false)
     @Enumerated(EnumType.STRING)
     private ProjectStatus status;
+
 }

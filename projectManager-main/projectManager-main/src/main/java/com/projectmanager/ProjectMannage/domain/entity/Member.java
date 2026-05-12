@@ -1,11 +1,12 @@
 package com.projectmanager.ProjectMannage.domain.entity;
 
-import com.projectmanager.ProjectMannage.model.TaskStatus;
+import com.projectmanager.ProjectMannage.model.ProjectStatus;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Builder
@@ -13,13 +14,12 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class Task 
+public class Member
 {
     private String id;
-    private String tittle;
-    private String description;
-    private Integer numberOfDays;
-    private TaskStatus status;
-    private Project project;
-    private Member assignMember;
+    private String secret;
+    private String name;
+    private String email;
+    private Boolean deleted;
+    private List<Project> project;
 }
